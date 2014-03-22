@@ -22,7 +22,7 @@ setup(
     classifiers=[
         "Development Status :: 4 - Beta/Testing",
         "Topic :: Web Utilities",
-        "Framework :: Django 1.3.1",
+        "Framework :: Django 1.4.5",
         "License :: OSI Approved :: GPLv3 License",
         "Operating System :: OS Independent",
         "Natural Language :: English",
