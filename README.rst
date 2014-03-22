@@ -3,7 +3,10 @@ django-file-repository
 
 Current version: 0.2.1
 
-This program is a file storage platform.
+File Storage and Display platform.
+
+Forked version of @akaak
+
 
 Features
 --------
