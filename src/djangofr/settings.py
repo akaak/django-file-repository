@@ -87,7 +87,7 @@ MEDIA_ROOT = cwd + '/uploads/'
 MEDIA_URL = '/uploads'
 STATIC_ROOT = cwd + '/static/'
 STATIC_URL = '/static'
-ADMIN_MEDIA_PREFIX = '/static/admin/'
+#ADMIN_MEDIA_PREFIX = '/static/admin/'
 STATICFILES_DIRS = (
     (cwd + '/static_files/'),
 )

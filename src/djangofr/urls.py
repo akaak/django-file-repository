@@ -22,8 +22,11 @@ from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf import settings
+import os
 
 admin.autodiscover()
+
+
 
 urlpatterns = patterns('',
 
@@ -44,6 +47,11 @@ urlpatterns = patterns('',
     # Static content #### FOR DEVELOPMENT!! ####
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': 'static'}),
+
+    # Media content #### FOR DEVELOPMENT!! ####
+    (r'^admin/(?P<path>.*)$', 'django.views.static.serve',
+        {'document_root': 'static/admin'}),
+
 )
 
 if settings.DEBUG:
