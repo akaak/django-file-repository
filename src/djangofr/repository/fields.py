@@ -78,7 +78,7 @@ class StdImageField(ImageField):
                     smaller on width or height
         """
         WIDTH, HEIGHT = 0, 1
-        from PIL import Image, ImageOps
+        import Image, ImageOps
         img = Image.open(filename)
         if img.size[WIDTH] > size['width'] or img.size[HEIGHT] > size['height']:
             if size['force']:
